@@ -6,10 +6,15 @@ ENV IPERF_VERBOSE=1
 
 RUN apk --update --no-cache add \
   iperf3 \
+  supervisor \
   bash
 
 ADD rootfs /
 WORKDIR /opt/entrypoint
 
 EXPOSE 5201
-ENTRYPOINT ["/opt/entrypoint/server.sh"]
+
+CMD ["supervisord", "-c", "/usr/local/etc/supervisord.conf"]
+
+ENTRYPOINT ["./server.sh"]
+
