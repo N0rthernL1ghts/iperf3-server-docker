@@ -7,7 +7,8 @@ ENV IPERF_VERBOSE=1
 RUN apk --update --no-cache add \
   iperf3 \
   supervisor \
-  bash
+  bash \
+  && adduser -s /bin/false -D -h /tmp/iperf iperf
 
 ADD rootfs /
 WORKDIR /opt/entrypoint
