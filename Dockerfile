@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:edge
+FROM alpine:edge
 
 LABEL maintainer="Aleksandar Puharic <xzero@elite7hackers.net>"
 
