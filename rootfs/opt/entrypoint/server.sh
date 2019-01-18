@@ -9,6 +9,4 @@ fi
 
 export IPRF_SERVER_ARGUMENTS_BAG="${argumentsBag}"
 
-#supervisord -c /usr/local/etc/supervisord.conf
-
 exec "$@"
