@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+source /iperf3-server/server.sh
+
+s6-setuidgid iperf /usr/bin/iperf3 --server ${argumentsBag}
