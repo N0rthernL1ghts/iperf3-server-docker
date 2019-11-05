@@ -1,4 +1,4 @@
-FROM smebberson/alpine-base
+FROM nlss/s6-alpine:latest
 
 LABEL maintainer="Aleksandar Puharic <xzero@elite7hackers.net>"
 

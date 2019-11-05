@@ -1,0 +1,2 @@
+/iperf3-server/envParse.sh true root 0777 0777
+/iperf3-server/server.sh true root 0777 0777
