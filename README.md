@@ -1,5 +1,5 @@
 # iperf3-server-docker (DEPRECATED)
-### Succeeded by simpler image [RouterZero/iperf-server](https://github.com/RouterZero/iperf3-server)
+### Succeeded by simpler image [RouterZero/iperf-server](https://github.com/RouterZero/iperf-server)
  
 Containerized iperf3 running as a server.
 
